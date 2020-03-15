@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-project-f2a48": {
+      "hosting": {
+        "frontend": [
+          "angular-project-f2a48"
+        ]
+      }
+    }
+  }
+}
