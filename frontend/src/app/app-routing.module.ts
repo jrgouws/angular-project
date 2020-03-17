@@ -5,8 +5,8 @@ import { CardComponent } from './card/card.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
   { path: 'card', component: CardComponent },
+  { path: '', component: AppComponent },
   { path: '**', redirectTo: '' }
 ];
 

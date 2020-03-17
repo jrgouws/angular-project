@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -15,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CardComponent } from './card/card.component';
+import { PhoneLoginComponent } from './phone-login/phone-login.component';
+import * as firebase from 'firebase';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDuL9UboGBvbG2fKc-NE2cr-4alpEsgd2A",
@@ -27,15 +30,19 @@ const firebaseConfig = {
   measurementId: "G-DMEGE6EL4M"
 };
 
+firebase.initializeApp(firebaseConfig);
+
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    PhoneLoginComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,

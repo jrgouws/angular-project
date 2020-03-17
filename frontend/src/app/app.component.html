@@ -1,7 +1,7 @@
-<div *ngIf="auth.user$ | async as user; else login">
-  <!-- <pre>
+<!-- <div *ngIf="auth.user$ | async as user; else login">
+  <pre>
     {{ user | json}}
-  </pre> -->
+  </pre>
   <h1>Author -- J.R Gouws</h1>
   <app-card></app-card>
   <hr>
@@ -10,4 +10,5 @@
 
 <ng-template #login>
 <button class="button" (click)="auth.googleSignin()">Login with Google</button>
-</ng-template>
+</ng-template> -->
+<app-phone-login></app-phone-login>
