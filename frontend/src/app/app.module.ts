@@ -20,14 +20,14 @@ import { PhoneLoginComponent } from './phone-login/phone-login.component';
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDuL9UboGBvbG2fKc-NE2cr-4alpEsgd2A",
-  authDomain: "angular-project-f2a48.firebaseapp.com",
-  databaseURL: "https://angular-project-f2a48.firebaseio.com",
-  projectId: "angular-project-f2a48",
-  storageBucket: "angular-project-f2a48.appspot.com",
-  messagingSenderId: "648112835211",
-  appId: "1:648112835211:web:6463dafb3d21ba146c228e",
-  measurementId: "G-DMEGE6EL4M"
+  apiKey: 'AIzaSyDuL9UboGBvbG2fKc-NE2cr-4alpEsgd2A',
+  authDomain: 'angular-project-f2a48.firebaseapp.com',
+  databaseURL: 'https://angular-project-f2a48.firebaseio.com',
+  projectId: 'angular-project-f2a48',
+  storageBucket: 'angular-project-f2a48.appspot.com',
+  messagingSenderId: '648112835211',
+  appId: '1:648112835211:web:6463dafb3d21ba146c228e',
+  measurementId: 'G-DMEGE6EL4M'
 };
 
 firebase.initializeApp(firebaseConfig);

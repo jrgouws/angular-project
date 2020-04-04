@@ -25,18 +25,17 @@ export class PhoneNumber {
 })
 export class PhoneLoginComponent implements OnInit {
   windowRef: any;
-  phoneNumber = new PhoneNumber()
+  phoneNumber = new PhoneNumber();
   verificationCode: string;
   user: any;
-  invitedGuests = ['0614248765']
+  invitedGuests = ['0614248765'];
 
   constructor(private win: AuthService, private router: Router) { }
 
   ngOnInit() {
-    this.windowRef = this.win.windowRef
-    this.windowRef.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container')
-
-    this.windowRef.recaptchaVerifier.render()
+    this.windowRef = this.win.windowRef;
+    this.windowRef.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    this.windowRef.recaptchaVerifier.render();
   }
 
   sendLoginCode() {
@@ -62,7 +61,7 @@ export class PhoneLoginComponent implements OnInit {
                   .then( result => {
                     this.user = result.user;
     })
-    .catch( error => console.log(error, "Incorrect code entered?"));
+    .catch( error => console.log(error, 'Incorrect code entered?'));
   }
 
   verifyGuest() {
