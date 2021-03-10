@@ -23,10 +23,10 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
+  flip = 'inactive';
+
   ngOnInit() {
   }
-
-  flip: string = 'inactive';
 
   toggleFlip() {
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
